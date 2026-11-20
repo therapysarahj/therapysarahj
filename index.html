@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#50939b">
+  <meta name="description" content="Sarah Jane — person-centred counselling and psychotherapy. A space to feel heard, explore what matters, and move at your own pace.">
+  <title>Sarah Jane | Counselling & Psychotherapy</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrapper">
+    <div class="header-identity">
+      <a class="logo-link" href="#contact" aria-label="Contact Sarah Jane">
+        <img class="header-logo" src="assets/logo.svg" alt="Message me" width="72" height="72">
+      </a>
+      <a class="brand" href="#about" aria-label="Sarah Jane home">
+        <span class="brand-name"><span data-content="name">Sarah Jane</span><span class="brand-dot">.</span></span>
+        <span class="brand-description">Counselling & psychotherapy</span>
+      </a>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="#about">About me</a>
+      <a href="#approach">My approach</a>
+      <a href="#questions">Questions</a>
+      <a class="nav-contact" href="#contact">Let’s talk</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ABOUT: edit the words in content.js; change the layout here. -->
+    <section class="hero wrapper" id="about" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Person-centred counselling</p>
+        <h1 id="hero-title" data-content="headline">A space to be<br>yourself.</h1>
+        <p class="hero-lead" data-content="introduction"></p>
+        <div class="about-copy" id="about-copy"></div>
+        <div class="hero-actions">
+          <a class="button primary" href="#contact">Get in touch</a>
+          <a class="quiet-link" href="#approach">How I work</a>
+        </div>
+        <p class="hero-note">Your story. Your pace. A place to begin.</p>
+      </div>
+      <figure class="portrait">
+        <div class="portrait-frame"><img src="assets/photo_bw.jpeg" alt="Sarah Jane" width="559" height="833" fetchpriority="high"></div>
+        <figcaption><span class="portrait-name" data-content="name">Sarah Jane</span><span>Counsellor & psychotherapist</span></figcaption>
+        <div class="portrait-label" aria-hidden="true"><span>Room to talk.</span><span>Space to grow.</span></div>
+      </figure>
+    </section>
+
+    <div class="values-strip wrapper" aria-label="My approach at a glance">
+      <span>A relationship built on trust</span><span>Understanding without judgement</span><span>Led by what matters to you</span>
+    </div>
+
+    <!-- APPROACH -->
+    <section class="section wrapper approach-section" id="approach" aria-labelledby="approach-title">
+      <div class="section-intro"><p class="eyebrow">My approach</p><h2 id="approach-title">You don’t have to<br>have it all figured out.</h2></div>
+      <div class="approach-copy"><p class="large-copy" data-content="approachLead"></p><p data-content="approachBody"></p><a class="text-link" href="https://www.bacp.co.uk/about-therapy/types-of-therapy/person-centred-counselling" target="_blank" rel="noopener noreferrer">Read about person-centred counselling at BACP</a></div>
+      <div class="approach-cards" id="approach-cards"></div>
+    </section>
+
+    <!-- SPACE TO EXPLORE -->
+    <section class="explore-band" aria-labelledby="explore-title">
+      <div class="wrapper explore-inner"><div><p class="eyebrow">Space for what matters</p><h2 id="explore-title">Whatever brings<br>you here.</h2></div><div><p data-content="exploreIntro"></p><div class="topic-tags" id="topics"></div><p class="small-copy">You don’t need the perfect words to start a conversation.</p></div></div>
+    </section>
+
+    <!-- QUALIFICATIONS -->
+    <section class="section wrapper qualifications" aria-labelledby="qualifications-title">
+      <div><p class="eyebrow">A foundation of learning</p><h2 id="qualifications-title">Training &<br>qualifications.</h2><p class="section-note">A person-centred approach, grounded in counselling and psychotherapy training.</p></div>
+      <div class="qualification-list" id="qualification-list"></div>
+    </section>
+
+    <!-- QUESTIONS: native details elements work without JavaScript. -->
+    <section class="section wrapper questions-section" id="questions" aria-labelledby="questions-title">
+      <div><p class="eyebrow">Before we begin</p><h2 id="questions-title">A few things you<br>might be wondering.</h2><p class="section-note">It’s okay to have questions. Finding the right person to talk to matters.</p></div>
+      <div class="question-list" id="question-list"></div>
+    </section>
+
+    <!-- CONTACT: update the email and phone number in content.js. -->
+    <section class="contact-section wrapper" id="contact" aria-label="Contact Sarah Jane">
+      <div class="contact-methods">
+        <div class="contact-method"><span class="contact-label">Email me</span><a id="email-link"></a></div>
+        <div class="contact-method"><span class="contact-label">Call me</span><a id="phone-link"></a></div>
+      </div>
+    </section>
+
+    <!-- CLOSING QUOTE: edit the wording and attribution in content.js. -->
+    <section class="quote-section wrapper" aria-label="A quote from Rumi">
+      <figure>
+        <blockquote><p data-content="quote"></p></blockquote>
+        <figcaption data-content="quoteAuthor">Rumi</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="wrapper"><a class="footer-name" href="#about">Sarah Jane<span>.</span></a><span id="copyright"></span><a href="#about">Back to top</a></footer>
+  <noscript><p class="wrapper">Please enable JavaScript to view the full biography, qualifications, and contact details.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,39 @@
+# Sarah Jane — counselling & psychotherapy
+
+A standalone static website. No installation, build step, database or account needed. Nothing is published.
+
+## Preview
+
+Open `index.html` directly in your browser, or run from this folder:
+
+```sh
+python3 -m http.server 8080 --bind 127.0.0.1
+```
+
+Visit http://localhost:8080 and refresh after saving edits. If that port is already being used for Luke's site, use 8081 instead. Ctrl+C stops the server.
+
+## Edit the site
+
+- **content.js**: biography, principles, topics, degree descriptions, FAQs, contact details and closing quote. This file contains the editable draft copy. Keep commas and quotation marks; `\n` inserts a line break.
+- **index.html**: section order, navigation links and fixed headings. Move or remove entire `<section> ... </section>` blocks. Most content-rendering functions safely skip removed containers.
+- **styles.css**: palette variables at the top; labelled sections for the portrait, upright header logo, red/pink accents, contact layout and closing quote.
+- **assets/photo_bw.jpeg**: the supplied portrait, shown without cropping.
+- **assets/logo.svg**: the supplied “message me…” logo, linked to contact at the top left.
+
+To change a photo, replace its file or update the `src` in index.html. To resize it, change `.portrait`'s `max-width` in styles.css. Keep image `height: auto` to show the whole image.
+
+The contact section intentionally contains only email and phone. Contact links use `mailto:` and `tel:`; there is no form or message storage. The FAQ uses native expandable `<details>` elements.
+
+## Draft content to review
+
+The email `sarah.jane@example.com` and phone `07700 900123` are fictional examples, requested for the draft. Replace `email`, `phoneDisplay`, and `phoneLink` before publication. The phone is from Ofcom's reserved drama range: https://www.ofcom.org.uk/phones-and-broadband/phone-numbers/numbers-for-drama
+
+The bachelor's and master's qualifications and University of Salford were supplied by you. Confirm exact degree titles. Sarah should review the first-person copy to ensure it reflects her practice. No registration, accreditation, specialist expertise, rates, appointment durations, location or appointment modes have been invented.
+
+Person-centred explanatory copy was drafted with reference to BACP's overview, with a reader-facing link in the approach section: https://www.bacp.co.uk/about-therapy/types-of-therapy/person-centred-counselling
+
+The closing Rumi quotation uses the wording supplied by you. It is editable under `quote` and `quoteAuthor`.
+
+## Publish later on GitHub Pages
+
+Upload `index.html`, `styles.css`, `content.js`, `script.js`, `.nojekyll`, and the `assets` directory to the root of a GitHub repository. In Settings → Pages choose Deploy from a branch, select the branch and `/ (root)`. All asset paths are relative, including for repository subpaths. The `src` source-notes folder is not needed for deployment.
