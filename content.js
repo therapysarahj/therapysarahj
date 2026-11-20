@@ -3,7 +3,7 @@
 // exact degree titles, practice details and professional memberships are unconfirmed.
 window.siteContent = {
   name: "Sarah Jane",
-  headline: "A space to be\nyourself.",
+  headline: "A space to be\nyourself...",
   introduction: "Hello, I’m Sarah Jane. I’m a counsellor and psychotherapist with a person-centred approach.",
   about: [
     "I offer a warm, thoughtful space where you can talk about what’s on your mind and feel listened to as a whole person.",
